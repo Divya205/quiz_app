@@ -341,19 +341,34 @@ header h2 {
   }
 }
 
+/* Mobile Styles */
 @media (max-width: 600px) {
-  #summary {
+    #summary {
       padding: 10px;
+  }
+
+  #summary-stats {
+      padding: 5px;
+     
   }
 
   #summary-stats p {
       flex-direction: column;
       align-items: flex-start;
+      margin: 5px 0;
   }
 
   #summary-stats p span {
       display: block;
       margin-bottom: 5px;
+  }
+
+  .number {
+      font-size: 1.4rem; /* Slightly smaller font size on mobile */
+  }
+
+  .text {
+      font-size: 0.8rem; /* Adjust text size for mobile */
   }
 
   ol {

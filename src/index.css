@@ -319,8 +319,8 @@ header h2 {
   text-transform: uppercase;
   font-size: 0.8rem;
   font-family:Arial, Helvetica, sans-serif;
-  color: #35078a;
-  margin-top: -0.7rem;
+  color: #350101;
+  margin-top: 0.5rem;
   margin-left: 0.2rem;
   letter-spacing: 0.1rem;
 }
@@ -341,45 +341,56 @@ header h2 {
   }
 }
 
-/* Mobile Styles */
-@media (max-width: 600px) {
-    #summary {
-      padding: 10px;
-  }
 
-  #summary-stats {
-      padding: 5px;
-     
-  }
+	/* Mobile Styles */
+	@media (max-width: 600px) {
+	  #summary {
+		  padding: 10px;
+	  }
 
-  #summary-stats p {
-      flex-direction: column;
-      align-items: flex-start;
-      margin: 5px 0;
-  }
+	  #summary-stats {
+		text-align: left;
+		margin-left: 0;
+		margin-right: auto;
+	  }
 
-  #summary-stats p span {
-      display: block;
-      margin-bottom: 5px;
-  }
+	  #summary-stats p {
+		  flex-direction: column;
+		  align-items: flex-start;
+		  margin: 5px 0;
+		  text-align: left; /* Ensure text is aligned to the left */
+	  }
 
-  .number {
-      font-size: 1.4rem; /* Slightly smaller font size on mobile */
-  }
+	  #summary-stats p span {
+		  display: block;
+		  margin-bottom: 5px;
+	  }
 
-  .text {
-      font-size: 0.8rem; /* Adjust text size for mobile */
-  }
+	  #summary-stats .number {
+		  font-size: 1.5rem; /* Slightly smaller font size on mobile */
+	  }
 
-  ol {
-      margin-top: 10px;
-  }
+	  #summary-stats .text {
+		  font-size: 0.7rem; 
+		  margin-left: 1px;
+		  margin-top: -0.5rem; /* Adjust margin to fit text */
+		  letter-spacing: 0.05rem; /* Adjust letter spacing for mobile */
+	  }
 
-  li {
-      padding: 8px;
-  }
+	  /* Move "answered incorrectly" to the left side */
+	  #summary-stats p:nth-child(3) {
+		  align-items: flex-start;
+	  }
 
-  .correct-answer {
-      font-size: 0.9em;
-  }
-}
+	  ol {
+		  margin-top: 10px;
+	  }
+
+	  li {
+		  padding: 8px;
+	  }
+
+	  .correct-answer {
+		  font-size: 0.9em;
+	  }
+	} 

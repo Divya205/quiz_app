@@ -368,7 +368,7 @@ header h2 {
       font-family: 'Roboto Condensed', sans-serif;
       font-size: 2rem;
       color: #06000c;
-      margin-left: -35px;
+      margin-left: -10px;
     }
     
     #summary-stats .text {
@@ -378,7 +378,7 @@ header h2 {
       font-family:Arial, Helvetica, sans-serif;
       color: #96045e;
       margin-top: 0.2rem;
-      margin-left: -35px;
+      margin-left: -10px;
       letter-spacing: 0.1rem;
     }
 	  /* Move "answered incorrectly" to the left side */

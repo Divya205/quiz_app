@@ -349,36 +349,38 @@ header h2 {
 	  }
 
 	  #summary-stats {
-		text-align: left;
-		margin-left: 5px;
-		margin-right: auto;
-	  }
-
-	  #summary-stats p {
-		  flex-direction: column;
-		  align-items: flex-start;
-		  margin: 5px 0;
-		  text-align: left; /* Ensure text is aligned to the left */
-	  }
-
-	  #summary-stats p span {
-		  display: block;
-		  margin-bottom: 5px;
-	  }
-
-	  #summary-stats .number {
-		  font-size: 1.5rem; /* Slightly smaller font size on mobile */
-      margin-left: 10px;
-      margin-right: auto;
-	  }
-
-	  #summary-stats .text {
-		  font-size: 0.7rem; 
-		  margin-left: 1px;
-		  margin-top: -0.5rem; /* Adjust margin to fit text */
-		  letter-spacing: 0.05rem; /* Adjust letter spacing for mobile */
-	  }
-
+      display: flex;
+      gap: 3rem;
+      width: 60%;
+      margin: 2rem auto;
+      padding-bottom: 2rem;
+      border-bottom: 2px solid #594276;
+    }
+    
+    #summary-stats p {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+    }
+    
+    #summary-stats .number {
+      font-family: 'Roboto Condensed', sans-serif;
+      font-size: 2rem;
+      color: #06000c;
+      margin-left: -35px;
+    }
+    
+    #summary-stats .text {
+      
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      font-family:Arial, Helvetica, sans-serif;
+      color: #96045e;
+      margin-top: 0.2rem;
+      margin-left: -35px;
+      letter-spacing: 0.1rem;
+    }
 	  /* Move "answered incorrectly" to the left side */
 	  #summary-stats p:nth-child(3) {
 		  align-items: flex-start;

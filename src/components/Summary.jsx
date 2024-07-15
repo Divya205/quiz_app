@@ -26,11 +26,11 @@ export default function Summary({ userAnswers }) {
                 </p>
                 <p>
                     <span className="number">{correctAnswersShare}%</span>
-                    <span className="text"> answered correctly </span>
+                    <span className="text"> Correct </span>
                 </p>
                 <p>
                     <span className="number">{wrongAnswersShare}%</span>
-                    <span className="text"> answered incorrectly </span>
+                    <span className="text"> Wrong </span>
                 </p>
             </div>
             <ol>

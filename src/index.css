@@ -368,6 +368,8 @@ header h2 {
 
 	  #summary-stats .number {
 		  font-size: 1.5rem; /* Slightly smaller font size on mobile */
+      margin-left: 10px;
+      margin-right: auto;
 	  }
 
 	  #summary-stats .text {
